@@ -5,7 +5,11 @@
     <?php include("_header_include.html"); ?>
   </head>
   <body>
-    <h1 class="title" text-center><a href="ru/">Русский</a></h1> 
+  <div class="container">
+  <span class="align-middle">
+    <h1 class="title" ><a href="ru/">Сайт на Русском языке</a></h1> 
+    </span>
+    </div>
 	<?php include("_bottom_include.html"); ?>
    </body>
 </html>
