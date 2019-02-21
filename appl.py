@@ -1,6 +1,7 @@
-from flask import Flask
-app = Flask(__name__)
+from flask import Flask, request
+# set the project root directory as the static folder, you can set others.
+app = Flask(__name__, static_url_path='/ru')
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def root():
+    return app.send_static_file('index.html')
